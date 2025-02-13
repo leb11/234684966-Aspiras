@@ -10,7 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Navbar */
+
 .navbar {
   display: flex; 
   align-items: center; 
@@ -57,7 +57,7 @@ html {
   transition: color 0.3s ease-in-out;
 }
 
-/* Hero Section */
+
 .hero {
   background: url('image/cinnamoromi.webp') center/cover no-repeat; 
   height: 130vh;
@@ -104,12 +104,12 @@ html {
   transition: all 0.3s ease-in-out;
 }
 
-/* About Section */
+
 .about {
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
-              url('image/cinnamoromi.webp') center/cover no-repeat; 
-  background-attachment: fixed; /* Optional for parallax effect */
-  color: #333; /* Text color for readability */
+    url('image/cinnamoromi.webp') center/cover no-repeat; 
+  background-attachment: fixed; 
+  color: #333; 
   padding: 2rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -117,7 +117,7 @@ html {
 
 .about h2 {
   font-size: 2rem;
-  color: #ff69b4; /* Accent color for the heading */
+  color: #ff69b4; 
 }
 
 .about p {
@@ -128,11 +128,25 @@ html {
   margin: 0 auto;
 }
 
+.about {
+  text-align: center;
+  padding: 50px 20px; 
+  margin: 0 auto; 
+  background-color: rgba(255, 255, 255, 0.8); 
+  max-width: 1000px; 
+}
 
-/* Gallery Section */
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
 .services {
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), 
-              url('image/cinnamoromi.webp') center/cover no-repeat;
+    url('image/cinnamoromi.webp') center/cover no-repeat;
   background-attachment: fixed;
   color: #333;
   padding: 2rem;
@@ -146,8 +160,8 @@ html {
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
-  gap: 1rem; /* Space between images */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 1rem; 
   justify-items: center;
   align-items: center;
 }
@@ -158,13 +172,13 @@ html {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff; /* Optional: Add background for consistent border around images */
+  background-color: #fff; 
 }
 
 .service-card img {
-  width: 100%; /* Full width */
-  height: 200px; /* Set a fixed height */
-  object-fit: cover; /* Crop image to fit container */
+  width: 100%; 
+  height: 200px; 
+  object-fit: cover; 
   border-radius: 10px;
 }
 
@@ -175,22 +189,43 @@ html {
 }
 
 .service-card:hover {
-  transform: scale(1.05); /* Highlight effect */
+  transform: scale(1.05); 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Modal styles */
+.gallery {
+  text-align: center;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  text-align: center;
+}
+
+.gallery-img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+}
+
 .modal {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
-  z-index: 1000; /* Ensure it appears above everything */
+  z-index: 1000; 
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.8); 
 }
 
 .modal-content {
@@ -224,8 +259,6 @@ html {
   color: #ff69b4;
 }
 
-
-/* Contact Section */
 .contact {
   background-color: #333; 
   color: #fff;
@@ -264,7 +297,7 @@ html {
   font-size: 0.9rem;
 }
 
-/* Footer */
+
 footer {
   background-color: #add8e6; 
   color: #333;
